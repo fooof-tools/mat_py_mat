@@ -23,8 +23,8 @@ fooof_results
 
 fooof_results = [];
 for ind = 0:1
-    fooof_results = load(strcat('f_res_', string(ind)));
-    fooof_results = [outputs, output];
+    cur_result = load(strcat('f_res_', string(ind)));
+    fooof_results = [fooof_results, cur_result];
 end
 
 % Check out outputs
