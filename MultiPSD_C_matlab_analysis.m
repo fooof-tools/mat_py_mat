@@ -13,11 +13,11 @@
 
 %% Load a specific variable that was saved out to a mat file
 
-% Load slopes
-sls = load('slopes');
+% Load exponents
+exps = load('exps');
 
-% Check out slopes
-sls
+% Check out the exponents
+exps
 
 %% Load in FOOOF results that have been saved out - from json file
 
