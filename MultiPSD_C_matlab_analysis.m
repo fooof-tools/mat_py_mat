@@ -1,4 +1,15 @@
-%% Load and Analyze FOOOF Results in Matlab
+%% Load and Analyze FOOOF Results in Matlab - Multiple PSDs
+% 
+% This script is an example, with multiple power spectra,
+% of integrating Python FOOOF into a Matlab workflow. 
+% 
+% It is part of a trio of files that must be run in order:
+% - `MultiPSD_A_*
+% - `MultiPSD_B_*
+% - `MultiPSD_C_*
+%
+% This code must be run after `MultiPSD_B_python_fooofing.ipynb has been run.
+%
 
 %% Load a specific variable that was saved out to a mat file
 

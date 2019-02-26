@@ -1,6 +1,17 @@
 %% Matlab PreProcessing - Multiple PSDs
+% 
+% This script is an example, with multiple power spectra,
+% of integrating Python FOOOF into a Matlab workflow. 
+% 
+% It is part of a trio of files that must be run in order:
+% - `MultiPSD_A_*
+% - `MultiPSD_B_*
+% - `MultiPSD_C_*
+%
 
-% Load data
+%% Load Data
+
+% Load two channels of time series data
 load('dat/ch_dat_one.mat');
 load('dat/ch_dat_two.mat');
 
@@ -11,6 +22,8 @@ chs_dat = [ch_dat_one; ch_dat_two]';
 
 % Calculate power spectra with Welch's method
 [psds, freqs] = pwelch(chs_dat, 500, [], [], s_rate);
+
+%% Save Out Data
 
 % Save the power spectra out to mat files
 save('power_spectra', 'freqs', 'psds');
