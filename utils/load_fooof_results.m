@@ -1,4 +1,4 @@
-% load_fooof_results () - load results from a json file (as saved out by FOOOF)
+% load_fooof_results () - Load results from a json file, as saved out by FOOOF.
 %
 % Usage:
 %   >> fooof_results = load_fooof_results(file_name)
@@ -8,7 +8,7 @@
 %
 % Ouputs:
 %   fooof_results   = fooof model ouputs, in a struct, including:
-%       fooof_results.background_params
+%       fooof_results.aperiodic_params
 %       fooof_results.peak_params
 %       fooof_results.gaussian_params
 %       fooof_results.error
