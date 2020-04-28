@@ -1,8 +1,8 @@
 %% Load and Analyze FOOOF Results in Matlab - Multiple PSDs
-% 
+%
 % This script is an example, with multiple power spectra,
-% of integrating Python FOOOF into a Matlab workflow. 
-% 
+% of integrating Python FOOOF into a Matlab workflow.
+%
 % It is part of a trio of files that must be run in order:
 % - `MultiPSD_A_*
 % - `MultiPSD_B_*
@@ -13,11 +13,11 @@
 
 %% Load a specific variable that was saved out to a mat file
 
-% Load slopes
-sls = load('slopes');
+% Load exponents
+exps = load('exps.mat');
 
-% Check out slopes
-sls
+% Check out the exponents
+exps
 
 %% Load in FOOOF results that have been saved out - from json file
 
@@ -34,7 +34,7 @@ fooof_results
 
 fooof_results = [];
 for ind = 0:1
-    cur_result = load(strcat('f_res_', string(ind)));
+    cur_result = load(strcat('f_results_', string(ind)));
     fooof_results = [fooof_results, cur_result];
 end
 

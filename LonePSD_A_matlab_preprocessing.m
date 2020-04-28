@@ -12,7 +12,7 @@
 %% Load Data
 
 % Load a single channel of data
-load('dat/ch_dat_one.mat');
+load('data/ch_dat_one.mat');
 
 %% Calculate Power Spectra
 
